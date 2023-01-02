@@ -9,28 +9,64 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        ZStack {
-            Color.background
-                .ignoresSafeArea()
-            Image("Background")
-                .resizable()
-                .ignoresSafeArea()
-            Image("House")
-                .frame(maxHeight: .infinity, alignment: .top)
-                .padding(.top, 257)
-            VStack{
-                Text("Montreal")
-                    .font(.largeTitle)
-                VStack(alignment: .center) {
-                    Text("19º" + "\n" + "Mostly Clear")
-                       
-                    Text("H:24º L:18º")
-                        .font(.title3.weight(.semibold))
+        NavigationView {
+            ZStack {
+                Color.background
+                    .ignoresSafeArea()
+                Image("Background")
+                    .resizable()
+                    .ignoresSafeArea()
+                Image("House")
+                    .frame(maxHeight: .infinity, alignment: .top)
+                    .padding(.top, 257)
+                VStack(spacing:  -10){
+                    Text("Montreal")
+                        .font(.largeTitle)
+                    VStack(alignment: .center) {
+    //                    Text("19º")
+    //                        .font(.system(size: 96, weight: .thin))
+    //                        .foregroundColor(.primary)
+    //                    +
+    //                    Text("\n ")
+    //                    +
+    //                    Text("Mostly Clear")
+    //                        .font(.title3.weight(.semibold))
+    //                        .foregroundColor(.secondary)
+                        Text(attributtedString)
+                        Text("H:24º L:18º")
+                            .font(.title3.weight(.semibold))
+                    }
+                    Spacer()
                 }
-                Spacer()
+                .padding(.top, 51)
+                TabBar(action: {})
             }
-            .padding(.top, 51)
+            .navigationBarHidden(true)
         }
+    }
+    
+    /**
+        How to use AttributedString to style block of text with different styles,
+     including optional tex like a pipe in this example.
+     */
+    private var attributtedString: AttributedString {
+        var string = AttributedString("19º" + "\n " + "Mostly Clear")
+        
+        if let temp = string.range(of: "19º") {
+            string[temp].font = .system(size: 96, weight: .thin)
+            string[temp].foregroundColor = .primary
+        }
+        // pipe don't exist now in our initial string, but can do it in future
+        if let pipe = string.range(of: " | ") {
+            string[pipe].font = .title3.weight(.semibold)
+            string[pipe].foregroundColor = .secondary
+        }
+        if let weather = string.range(of: "Mostly Clear") {
+            string[weather].font = .title3.weight(.semibold)
+            string[weather].foregroundColor = .secondary
+        }
+        
+        return string
     }
 }
 
