@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F36C8B2E2962F14F00C9A63A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36C8B2D2962F14F00C9A63A /* Extensions.swift */; };
+		F36C8B302962F5B400C9A63A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36C8B2F2962F5B400C9A63A /* HomeView.swift */; };
 		F3C9048D295097CD00496A94 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C9048C295097CD00496A94 /* WeatherApp.swift */; };
 		F3C9048F295097CD00496A94 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C9048E295097CD00496A94 /* ContentView.swift */; };
 		F3C90491295097CE00496A94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3C90490295097CE00496A94 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		F36C8B2D2962F14F00C9A63A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F36C8B2F2962F5B400C9A63A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F3C90489295097CD00496A94 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C9048C295097CD00496A94 /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		F3C9048E295097CD00496A94 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				F3C9048E295097CD00496A94 /* ContentView.swift */,
+				F36C8B2F2962F5B400C9A63A /* HomeView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3C9048F295097CD00496A94 /* ContentView.swift in Sources */,
+				F36C8B302962F5B400C9A63A /* HomeView.swift in Sources */,
 				F36C8B2E2962F14F00C9A63A /* Extensions.swift in Sources */,
 				F3C9048D295097CD00496A94 /* WeatherApp.swift in Sources */,
 			);
