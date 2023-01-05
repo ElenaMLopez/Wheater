@@ -23,15 +23,6 @@ struct HomeView: View {
                     Text("Montreal")
                         .font(.largeTitle)
                     VStack(alignment: .center) {
-    //                    Text("19º")
-    //                        .font(.system(size: 96, weight: .thin))
-    //                        .foregroundColor(.primary)
-    //                    +
-    //                    Text("\n ")
-    //                    +
-    //                    Text("Mostly Clear")
-    //                        .font(.title3.weight(.semibold))
-    //                        .foregroundColor(.secondary)
                         Text(attributtedString)
                         Text("H:24º L:18º")
                             .font(.title3.weight(.semibold))
