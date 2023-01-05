@@ -6,19 +6,33 @@
 //
 
 import SwiftUI
+import BottomSheet
+
+// Add a Bottom Sheet from library: https://github.com/Wouter125/BottomSheet
+
+enum BottomSheetPosition: CGFloat, CaseIterable {
+    case middle = 0.385 // container height in design / screen height in design (325/844)
+    case top = 0.831 // container height in design / screen height in design (702/844)
+}
 
 struct HomeView: View {
+    @State var bottomSheetPosition: BottomSheetPosition = .middle
+    
     var body: some View {
         NavigationView {
             ZStack {
+                // MARK: Backround Color
                 Color.background
                     .ignoresSafeArea()
+                // MARK: Background Image
                 Image("Background")
                     .resizable()
                     .ignoresSafeArea()
+                // MARK: House Image
                 Image("House")
                     .frame(maxHeight: .infinity, alignment: .top)
                     .padding(.top, 257)
+                // MARK: Weather Data
                 VStack(spacing:  -10){
                     Text("Montreal")
                         .font(.largeTitle)
@@ -30,7 +44,17 @@ struct HomeView: View {
                     Spacer()
                 }
                 .padding(.top, 51)
-                TabBar(action: {})
+                // MARK: Bottom Sheet
+                BottomSheetView(position: $bottomSheetPosition) {
+//                    Text(bottomSheetPosition.rawValue.formatted())
+                } content: {
+                    ForecastView()
+                }
+
+                // MARK: Tab Bar
+                TabBar(action: {
+                    bottomSheetPosition = .top
+                })
             }
             .navigationBarHidden(true)
         }
