@@ -18,6 +18,7 @@
 		F3D237592967119C00877554 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = F3D237582967119C00877554 /* BottomSheet */; };
 		F3D2375B29671A9800877554 /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D2375A29671A9800877554 /* ForecastView.swift */; };
 		F3D2375D296C178300877554 /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D2375C296C178300877554 /* Blur.swift */; };
+		F3D2375F296C5EC600877554 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D2375E296C5EC600877554 /* SegmentedControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F3C90493295097CE00496A94 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F3D2375A29671A9800877554 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
 		F3D2375C296C178300877554 /* Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
+		F3D2375E296C5EC600877554 /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				F3D2375C296C178300877554 /* Blur.swift */,
+				F3D2375E296C5EC600877554 /* SegmentedControl.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3C9048F295097CD00496A94 /* ContentView.swift in Sources */,
+				F3D2375F296C5EC600877554 /* SegmentedControl.swift in Sources */,
 				F36C8B302962F5B400C9A63A /* HomeView.swift in Sources */,
 				F3D2375D296C178300877554 /* Blur.swift in Sources */,
 				F36C8B2E2962F14F00C9A63A /* Extensions.swift in Sources */,

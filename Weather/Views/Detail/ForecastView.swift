@@ -9,9 +9,15 @@ import SwiftUI
 
 struct ForecastView: View {
     var bottomSheetTranslationProrated: CGFloat = 1
+    @State private var selection = 0
+
+    
     var body: some View {
         ScrollView {
-            
+            VStack(spacing: 20) {
+                // MARK: Segmented control
+                SegmentedControl(selection: $selection)
+            }
         }
 //        .background(Blur(radius: 25, opaque: true))
         // Using view customs extension backgroundBlur
