@@ -12,7 +12,13 @@ struct ForecastView: View {
         ScrollView {
             
         }
+//        .background(Blur(radius: 25, opaque: true))
+        // Using view customs extension backgroundBlur
+        .backgroundBlur(radius: 25, opaque: true)
         .background(Color.bottomSheetBackground)
+        // In light mode don't looks nice. For this we make own custom blur
+//        .background(.ultraThinMaterial)
+        
         .clipShape(
             RoundedRectangle(cornerRadius: 44)
         )
