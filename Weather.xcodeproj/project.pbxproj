@@ -20,6 +20,7 @@
 		F3D2375D296C178300877554 /* Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D2375C296C178300877554 /* Blur.swift */; };
 		F3D2375F296C5EC600877554 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D2375E296C5EC600877554 /* SegmentedControl.swift */; };
 		F3D23761296C66A800877554 /* ForecastModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D23760296C66A800877554 /* ForecastModels.swift */; };
+		F3D23763296C744D00877554 /* ForecastCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D23762296C744D00877554 /* ForecastCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F3D2375C296C178300877554 /* Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blur.swift; sourceTree = "<group>"; };
 		F3D2375E296C5EC600877554 /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
 		F3D23760296C66A800877554 /* ForecastModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastModels.swift; sourceTree = "<group>"; };
+		F3D23762296C744D00877554 /* ForecastCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			children = (
 				F3D2375C296C178300877554 /* Blur.swift */,
 				F3D2375E296C5EC600877554 /* SegmentedControl.swift */,
+				F3D23762296C744D00877554 /* ForecastCard.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D23763296C744D00877554 /* ForecastCard.swift in Sources */,
 				F3D23761296C66A800877554 /* ForecastModels.swift in Sources */,
 				F3C9048F295097CD00496A94 /* ContentView.swift in Sources */,
 				F3D2375F296C5EC600877554 /* SegmentedControl.swift in Sources */,
