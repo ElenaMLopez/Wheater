@@ -23,6 +23,7 @@
 		F3D23763296C744D00877554 /* ForecastCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D23762296C744D00877554 /* ForecastCard.swift */; };
 		F3D23765296D7E6400877554 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D23764296D7E6400877554 /* NavigationBar.swift */; };
 		F3D71CC729799B4300E5694F /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D71CC629799B4300E5694F /* WeatherView.swift */; };
+		F3D71CC9297A875400E5694F /* WeatherWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D71CC8297A875400E5694F /* WeatherWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		F3D23762296C744D00877554 /* ForecastCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCard.swift; sourceTree = "<group>"; };
 		F3D23764296D7E6400877554 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		F3D71CC629799B4300E5694F /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		F3D71CC8297A875400E5694F /* WeatherWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				F3D2375C296C178300877554 /* Blur.swift */,
 				F3D2375E296C5EC600877554 /* SegmentedControl.swift */,
 				F3D23762296C744D00877554 /* ForecastCard.swift */,
+				F3D71CC8297A875400E5694F /* WeatherWidget.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3D71CC9297A875400E5694F /* WeatherWidget.swift in Sources */,
 				F3D23763296C744D00877554 /* ForecastCard.swift in Sources */,
 				F3D23761296C66A800877554 /* ForecastModels.swift in Sources */,
 				F3C9048F295097CD00496A94 /* ContentView.swift in Sources */,
